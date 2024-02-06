@@ -1,15 +1,173 @@
+<!-- per commentare:  CTRL+ù / CTRL+C / CMD+K+C -->
+
+<!-- TAG HTML  -->
+<!-- <nometag> Contenuto </nometag> => ELEMENTO HTML  -->
+
+<!-- ! with enter will open the doctype html -->
+<!-- html5 with enter will open the doctype html -->
+
+<!-- head = the brain of the project and uses the meta tag it is the formation and it is a self closing tag -->
+<!-- title tag is the name of the project in the tab -->
+
+<!-- Body is the body of the project example the clothes on the body.  It is a closing tag -->
+
+<!-- tag generici e tag semantici  eg a generic tag is a div becausee it does not do anything and blocks however using another div will give the space between each by blocking each one -->
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Progretto Heroes</title>
+
+<!-- COLLEGAMENTO AL FOGLIO DI STILE --> 
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <main>
-        Hello Heroes
-        
-        
-    </main>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logoContainer">
+        <img class="logo" src="./media/deadpool.png " alt="Maschere di Deadpool">    
+    </div>
+    <ul class="navLinks">
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+    </ul>
+</nav>  
+
+<!-- FINE NAVBAR -->
+
+<main>
+
+<!-- HEADER -->
+
+
+        <header>
+            <h1 class="titoloHeader">Blog di supereroi</h1>
+            <h2 class="sottotitoloHeader">Chiamaci in caso di bisogno</h2>
+        </header> -
+
+<!-- FINE HEADER  -->
+
+<!-- SECTION CARDS  -->
+
+        <section class="sezioneCard">
+            <h3 class="titoloSezioneCard">I tre Supereroi più potenti</h3> 
+
+<!-- CONTENITORE DEGLI ARTICOLI -->
+
+            <div class="contenitoreArtioli"> 
+
+<!-- PRIMA ARTICOLO  -->
+                <article class="card">
+                    <h4 class="titoloCard">Hulk</h4>
+                    <p class="sottotitoloCard">Altissimo mostro verde</p>
+
+                    <div class="contenitoresottoCard">
+                        <p class="titolosottocard">Poteri:</p>
+                        <ol>
+                            <li>Forza illimitata</li>
+                            <li>Rigenerazione</li>
+                            <li>Salti lunghissimi</li>
+                        </ol>
+                    </div>  
+                </article> 
+
+<!-- SECONDO ARTICOLO  -->
+
+                <article class="card">
+                    <h4 class="titoloCard">Thor</h4>
+                    <p class="sottotitoloCard">Dio vichingo dei fulmini</p>
+
+                    <div class="contenitoresottoCard">
+                        <p class="titolosottocard">Poteri:</p>
+                        <ol>
+                            <li>Mjolnir</li>
+                            <li>Richiamo dei Fulmini</li>
+                            <li>Volo</li>
+                        </ol>
+                    </div>   
+                </article> 
+
+<!-- TERZO ARTICOLO  -->
+
+                <article class="card">
+                    <h4 class="titoloCard">Doctor Strange</h4>
+                    <p class="sottotitoloCard">Ex chirurgo magico</p>
+
+                    <div class="contenitoresottoCard">
+                        <p class="titolosottocard">Poteri:</p>
+                        <ol>
+                            <li>Manipolazione Tempo</li>
+                            <li>Manipolazione Spazio</li>
+                            <li>Magie</li>
+                        </ol>
+                    </div>     
+                </article>
+            </div>
+        </section> 
+
+<!-- FINO SECTION CARDS  -->
+
+<!-- SECTION FORM -->
+
+        <section class="sezioneForm">
+            <h3 class="titoloForm">Contatta il tuo Supereroe preferito</h3>
+            
+            <form>
+                <div class="contenitoreInput">
+                    <label for="">Nome</label>
+                    <input type="text">
+                </div>
+
+                <div class="contenitoreInput">
+                    <label for="">Cognome</label>
+                    <input type="text">
+                </div>
+
+                <div class="contenitoreInput">
+                    <label for="">Richiesta</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="contenitoreBtnform">
+                    <button type="submit">Invia</button>
+                </div>
+            </form>
+        </section>
+    </main> 
+
+<!-- FINO SECTION FORM -->
+
+<!-- SECTION FOOTER -->
+    
+        <footer> 
+            <ul class="footerLinks">
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+            </ul>
+
+            <div class="contenitoreCopyright">
+                <p>@Copyright</p>
+
+                <a class="aulabLink" href="https://aulab.it/" target="_blank">
+                    Aulab
+                </a>
+            </div>
+        </footer> 
+    
+<!-- FINE SECTION FOOTER -->
+    
 </body>
 </html>
